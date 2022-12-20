@@ -1,4 +1,4 @@
-name: Lesson 5 SAST
+name: Lesson 5 SAST fix
 
 on:
   push:
