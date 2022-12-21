@@ -5,7 +5,7 @@ describe('Shows Appeteasers', () => {
     it('selects Handhelds', () => {
         cy.contains('Handhelds').click();
         cy.contains('Cheese Burger');
-        cy.contains('Fajita Tacos');
+        cy.contains('Fajita Tacos'); 
     });
     it('selects Appeteasers', () => {
         cy.contains('Appeteasers').click();
