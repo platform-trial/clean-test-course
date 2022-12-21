@@ -1,7 +1,9 @@
 describe('Shows Appeteasers', () => {
     it('Connect to Dev Server', () => {
         cy.visit('http://hangry-web-dev.us-east-1.elasticbeanstalk.com/');
+        cy.wait(10000);
     });
+
     it('selects Handhelds', () => {
         cy.contains('Handhelds').click();
         cy.contains('Cheese Burger');
