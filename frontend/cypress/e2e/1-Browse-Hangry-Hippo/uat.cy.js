@@ -1,15 +1,15 @@
 describe('Shows Appeteasers', () => {
     it('Connect to Dev Server', () => {
-        cy.visit('http://hangry-web-dev.us-east-1.elasticbeanstalk.com/');
-        cy.wait(10000);
+        cy.visit('http://hangry-web-dev.us-east-1.elasticbeanstalk.com/'); 
     });
-
     it('selects Handhelds', () => {
-        cy.contains('Handhelds').click();
+        cy.visit('http://hangry-web-dev.us-east-1.elasticbeanstalk.com/'); 
+        cy.contains('Handheld').click(); 
         cy.contains('Cheese Burger');
         cy.contains('Fajita Tacos'); 
     });
-    it('selects Appeteasers', () => {
+    it('selects Appeteasers', () => { 
+        cy.visit('http://hangry-web-dev.us-east-1.elasticbeanstalk.com/'); 
         cy.contains('Appeteasers').click();
         cy.contains('Tater Tots');
         cy.contains('Buffalo Wings');
